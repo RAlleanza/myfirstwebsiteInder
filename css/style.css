@@ -1,0 +1,196 @@
+/* ============================= */
+/* Palette colori e font globali */
+/* ============================= */
+:root {
+    --colore-primario: #1c1c1c;   /* sfondo scuro */
+    --colore-secondario: #e03b3b; /* rosso dettagli */
+    --colore-terziario: #ffffff;  /* testo bianco */
+    --colore-grigio: #999999;     /* testo secondario */
+    --font-base: 'Arial', 'Helvetica', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-base);
+    color: var(--colore-terziario);
+    background-color: var(--colore-primario);
+    line-height: 1.5;
+}
+
+/* ============================= */
+/* Contenitore centrale e sezioni */
+/* ============================= */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #333;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* ============================= */
+/* Navbar / Menu principale */
+/* ============================= */
+nav {
+    background-color: var(--colore-primario);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--colore-terziario);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--colore-secondario);
+}
+
+/* Dropdown semplice */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--colore-primario);
+    padding: 10px 0;
+    min-width: 150px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    padding: 10px 20px;
+}
+
+nav ul li ul li a {
+    color: var(--colore-terziario);
+}
+
+/* ============================= */
+/* Hero / Sezione principale */
+/* ============================= */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('../images/hero-bg.jpg'); /* sostituire con la tua immagine */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* ============================= */
+/* Pulsanti */
+/* ============================= */
+button, .btn {
+    background-color: var(--colore-secondario);
+    border: none;
+    padding: 12px 25px;
+    color: var(--colore-terziario);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #b03030; /* rosso più scuro */
+}
+
+/* ============================= */
+/* Immagini e gallerie */
+/* ============================= */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* ============================= */
+/* Sezione Chi Siamo / Team */
+/* ============================= */
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: var(--colore-grigio);
+}
+
+/* ============================= */
+/* Footer */
+/* ============================= */
+footer {
+    background-color: #111;
+    color: var(--colore-terziario);
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--colore-secondario);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
