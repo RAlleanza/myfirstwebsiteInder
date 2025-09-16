@@ -1,0 +1,141 @@
+.about {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about .intro-text {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+  color: #444;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.team h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 280px;
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.section.alt {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.service-item h3 {
+  margin-top: 0;
+  color: #222;
+}
+
+.service-item p {
+  color: #555;
+  margin: 15px 0;
+}
+
+.service-item .duration {
+  font-style: italic;
+  color: #888;
+}
+
+.why-choose-us {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-choose-us h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.why-choose-us ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+.why-choose-us li {
+  margin-bottom: 10px;
+}
